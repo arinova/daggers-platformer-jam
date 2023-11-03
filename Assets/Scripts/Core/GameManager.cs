@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    public bool isBossFight { get; private set; }
 
     private void Awake()
     {
@@ -15,9 +16,15 @@ public class GameManager : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
     }
-    // Start is called before the first frame update
+
     void Start()
     {
-        //SceneChanger.instance.LoadMenuScene();
+        isBossFight = false;
+    }
+
+    public void TriggerBossFight()
+    {
+        isBossFight = true;
+        Debug.Log("GameManager: Boss Fight Triggered");
     }
 }
