@@ -5,9 +5,8 @@ using UnityEngine;
 public class Enemy : MonoBehaviour, IDamageable
 {
     public float Health { get; set; }
-    [SerializeField] private int maxHealth = 5;
+    [SerializeField] private int maxHealth = 1;
     [SerializeField] private bool alive = true;
-    [SerializeField] private float deathDelay = 0.1f;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +22,7 @@ public class Enemy : MonoBehaviour, IDamageable
 
     public void Damage(float amount)
     {
-        Debug.Log("enemy.cs -> damage");
+        Debug.Log("enemy.cs -> damage, " + Health);
         Health -= amount;
 
         if (Health <= 0)
@@ -36,6 +35,6 @@ public class Enemy : MonoBehaviour, IDamageable
     {
         alive = false;
         KillBudget.instance.DecrementKillBudget(1);
-        Destroy(gameObject, 0);
+        Destroy(gameObject);
     }
 }

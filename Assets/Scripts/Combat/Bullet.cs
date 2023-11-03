@@ -19,7 +19,8 @@ public class Bullet : MonoBehaviour
         {
             Debug.Log("bullet.cs -> onCollisionEnter2D");
             collision.gameObject.GetComponent<Enemy>().Damage(1);
+            Destroy(gameObject);
         }
     }
- 
+
 }

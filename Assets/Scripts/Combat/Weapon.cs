@@ -19,9 +19,9 @@ public class Weapon : MonoBehaviour
     {
         
         attackCooldownTimer += Time.deltaTime / attackCooldown;
-        if (attackCooldownTimer >= 1)
+        if (attackCooldownTimer >= 0.25f)
         {
-            attackCooldownTimer -= 1;
+            attackCooldownTimer -= 0.25f;
             SpawnAttackPrefab();
         }
     }
