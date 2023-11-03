@@ -8,6 +8,9 @@ public class PlayerController : MonoBehaviour
     public Jumper jumper;
     public SpriteRenderer spriteRenderer;
     public AudioSource audioSource;
+    public Weapon weapon;
+
+    private bool isFacingRight = true;
 
     // Update is called once per frame, around 60 times a second
     void Update()
@@ -16,14 +19,22 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
             mover.AccelerateInDirection(new Vector2(-1, 0));
-            spriteRenderer.flipX = true;
+            //spriteRenderer.flipX = true;
+            if (isFacingRight)
+            {
+                Flip();
+            }
         }
 
         //Listen for key presses and move right
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
             mover.AccelerateInDirection(new Vector2(1, 0));
-            spriteRenderer.flipX = false;
+            //spriteRenderer.flipX = false;
+            if (!isFacingRight)
+            {
+                Flip();
+            }
         }
 
         //Listen for key presses and jump
@@ -46,5 +57,17 @@ public class PlayerController : MonoBehaviour
         {
             jumper.SetGravityReduced(false);
         }
+
+        //Listen for space bar to shoot
+        if (Input.GetKey(KeyCode.L))
+        {
+            weapon.TriggerFire();
+        }
+    }
+
+    void Flip()
+    {
+        transform.Rotate(0f, 180f, 0f);
+        isFacingRight = !isFacingRight;
     }
 }
