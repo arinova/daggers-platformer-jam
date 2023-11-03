@@ -6,6 +6,8 @@ public class Weapon : MonoBehaviour
 {
     public Transform firepoint;
     public GameObject bulletPrefab;
+    public float attackCooldownTimer = 0;
+    [SerializeField] private float attackCooldown = 1;
 
     // Can be moved to a weapon class
     void SpawnAttackPrefab()
@@ -15,6 +17,12 @@ public class Weapon : MonoBehaviour
 
     public void TriggerFire()
     {
-        SpawnAttackPrefab();
+        
+        attackCooldownTimer += Time.deltaTime / attackCooldown;
+        if (attackCooldownTimer >= 1)
+        {
+            attackCooldownTimer -= 1;
+            SpawnAttackPrefab();
+        }
     }
 }
