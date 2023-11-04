@@ -311,7 +311,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6695153068064462022, guid: b5e323af7f6874db89ccce687da879f7, type: 3}
       propertyPath: m_Name
-      value: enemy-brick1 (4)
+      value: right-floor-3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -338,7 +338,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8515403275151192866, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_Name
-      value: enemy2 (7)
+      value: enemy-left-3b
       objectReference: {fileID: 0}
     - target: {fileID: 8515403275151192877, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_RootOrder
@@ -455,7 +455,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6695153068064462022, guid: b5e323af7f6874db89ccce687da879f7, type: 3}
       propertyPath: m_Name
-      value: wall1 (5)
+      value: right-wall-5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -477,7 +477,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8515403275151192866, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_Name
-      value: enemy1 (7)
+      value: enemy-left-2c
       objectReference: {fileID: 0}
     - target: {fileID: 8515403275151192877, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_RootOrder
@@ -569,7 +569,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8515403275151192866, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_Name
-      value: enemy3 (9)
+      value: enemy-left-5a
       objectReference: {fileID: 0}
     - target: {fileID: 8515403275151192877, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_RootOrder
@@ -703,7 +703,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6695153068064462022, guid: b5e323af7f6874db89ccce687da879f7, type: 3}
       propertyPath: m_Name
-      value: enemy-brick1 (1)
+      value: right-floor-1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -725,7 +725,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8515403275151192866, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_Name
-      value: enemy3 (4)
+      value: enemy-right-4c
       objectReference: {fileID: 0}
     - target: {fileID: 8515403275151192877, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_RootOrder
@@ -801,7 +801,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8515403275151192866, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_Name
-      value: enemy2 (5)
+      value: enemy-right-5b
       objectReference: {fileID: 0}
     - target: {fileID: 8515403275151192877, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_RootOrder
@@ -867,7 +867,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8515403275151192866, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_Name
-      value: enemy1 (4)
+      value: enemy-left-1a
       objectReference: {fileID: 0}
     - target: {fileID: 8515403275151192877, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_RootOrder
@@ -887,7 +887,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8515403275151192877, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.008999996
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8515403275151192877, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_LocalRotation.w
@@ -944,7 +944,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8515403275151192866, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_Name
-      value: enemy1 (10)
+      value: enemy-left-5c
       objectReference: {fileID: 0}
     - target: {fileID: 8515403275151192877, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_RootOrder
@@ -1085,7 +1085,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6695153068064462022, guid: b5e323af7f6874db89ccce687da879f7, type: 3}
       propertyPath: m_Name
-      value: enemy-brick1 (7)
+      value: left-floor-2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1154,7 +1154,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6695153068064462022, guid: b5e323af7f6874db89ccce687da879f7, type: 3}
       propertyPath: m_Name
-      value: wall1 (9)
+      value: left-wall-5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1171,7 +1171,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8515403275151192866, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_Name
-      value: enemy2 (1)
+      value: enemy-right-2b
       objectReference: {fileID: 0}
     - target: {fileID: 8515403275151192877, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_RootOrder
@@ -1296,7 +1296,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6695153068064462022, guid: b5e323af7f6874db89ccce687da879f7, type: 3}
       propertyPath: m_Name
-      value: enemy-brick1 (8)
+      value: left-floor-3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1323,7 +1323,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8515403275151192866, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_Name
-      value: enemy3 (8)
+      value: enemy-left-4a
       objectReference: {fileID: 0}
     - target: {fileID: 8515403275151192877, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_RootOrder
@@ -1388,7 +1388,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8515403275151192866, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_Name
-      value: enemy1 (3)
+      value: enemy-right-1a
       objectReference: {fileID: 0}
     - target: {fileID: 8515403275151192877, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_RootOrder
@@ -1461,7 +1461,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8515403275151192866, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_Name
-      value: enemy2 (4)
+      value: enemy-right-4b
       objectReference: {fileID: 0}
     - target: {fileID: 8515403275151192877, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_RootOrder
@@ -1579,7 +1579,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6695153068064462022, guid: b5e323af7f6874db89ccce687da879f7, type: 3}
       propertyPath: m_Name
-      value: wall1 (3)
+      value: left-wall-1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1648,7 +1648,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6695153068064462022, guid: b5e323af7f6874db89ccce687da879f7, type: 3}
       propertyPath: m_Name
-      value: wall1 (8)
+      value: left-wall-4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1867,7 +1867,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8515403275151192866, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_Name
-      value: enemy2 (6)
+      value: enemy-left-2b
       objectReference: {fileID: 0}
     - target: {fileID: 8515403275151192877, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_RootOrder
@@ -1984,7 +1984,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6695153068064462022, guid: b5e323af7f6874db89ccce687da879f7, type: 3}
       propertyPath: m_Name
-      value: wall1
+      value: right-wall-1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2209,7 +2209,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6695153068064462022, guid: b5e323af7f6874db89ccce687da879f7, type: 3}
       propertyPath: m_Name
-      value: enemy-brick1 (2)
+      value: right-floor-2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2231,7 +2231,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8515403275151192866, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_Name
-      value: enemy3 (2)
+      value: enemy-right-3c
       objectReference: {fileID: 0}
     - target: {fileID: 8515403275151192877, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_RootOrder
@@ -2292,7 +2292,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8515403275151192866, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_Name
-      value: enemy1 (5)
+      value: enemy-right-4a
       objectReference: {fileID: 0}
     - target: {fileID: 8515403275151192877, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_RootOrder
@@ -2434,7 +2434,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6695153068064462022, guid: b5e323af7f6874db89ccce687da879f7, type: 3}
       propertyPath: m_Name
-      value: enemy-brick1 (6)
+      value: left-floor-1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2456,7 +2456,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8515403275151192866, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_Name
-      value: enemy2 (3)
+      value: enemy-left-1c
       objectReference: {fileID: 0}
     - target: {fileID: 8515403275151192877, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_RootOrder
@@ -2532,7 +2532,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8515403275151192866, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_Name
-      value: enemy3 (1)
+      value: enemy-right-2c
       objectReference: {fileID: 0}
     - target: {fileID: 8515403275151192877, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_RootOrder
@@ -2593,7 +2593,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8515403275151192866, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_Name
-      value: enemy1 (6)
+      value: enemy-right-5a
       objectReference: {fileID: 0}
     - target: {fileID: 8515403275151192877, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_RootOrder
@@ -2723,7 +2723,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6695153068064462022, guid: b5e323af7f6874db89ccce687da879f7, type: 3}
       propertyPath: m_Name
-      value: wall1 (1)
+      value: right-wall-2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2740,7 +2740,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8515403275151192866, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_Name
-      value: enemy1 (2)
+      value: enemy-right-3a
       objectReference: {fileID: 0}
     - target: {fileID: 8515403275151192877, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_RootOrder
@@ -2912,7 +2912,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8515403275151192866, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_Name
-      value: enemy3 (3)
+      value: enemy-left-1b
       objectReference: {fileID: 0}
     - target: {fileID: 8515403275151192877, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_RootOrder
@@ -2993,7 +2993,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6695153068064462016, guid: b5e323af7f6874db89ccce687da879f7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6695153068064462016, guid: b5e323af7f6874db89ccce687da879f7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3037,7 +3037,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6695153068064462022, guid: b5e323af7f6874db89ccce687da879f7, type: 3}
       propertyPath: m_Name
-      value: enemy-brick1 (3)
+      value: main-left
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3054,7 +3054,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8515403275151192866, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_Name
-      value: enemy1 (8)
+      value: enemy-left-3c
       objectReference: {fileID: 0}
     - target: {fileID: 8515403275151192877, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_RootOrder
@@ -3249,7 +3249,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8515403275151192866, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_Name
-      value: enemy3
+      value: enemy-right-1c
       objectReference: {fileID: 0}
     - target: {fileID: 8515403275151192877, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_RootOrder
@@ -3362,7 +3362,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6695153068064462022, guid: b5e323af7f6874db89ccce687da879f7, type: 3}
       propertyPath: m_Name
-      value: wall1 (2)
+      value: right-wall-3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3548,7 +3548,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6695153068064462022, guid: b5e323af7f6874db89ccce687da879f7, type: 3}
       propertyPath: m_Name
-      value: wall1 (7)
+      value: left-wall-3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3620,22 +3620,47 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1315393047}
+  - {fileID: 120459499}
+  - {fileID: 1095598715}
+  - {fileID: 1138972557}
+  - {fileID: 400637794}
+  - {fileID: 665523584}
+  - {fileID: 967782173}
+  - {fileID: 1296879454}
+  - {fileID: 974270902}
+  - {fileID: 203360167}
+  - {fileID: 1824320657}
+  - {fileID: 418048541}
+  - {fileID: 1729432429}
+  - {fileID: 654444384}
+  - {fileID: 1530082984}
+  - {fileID: 307267434}
+  - {fileID: 1343489475}
+  - {fileID: 1539816007}
+  - {fileID: 347216071}
+  - {fileID: 371247566}
+  - {fileID: 102374430}
+  - {fileID: 10056985}
+  - {fileID: 1884505286}
+  - {fileID: 384094638}
+  - {fileID: 1654747697}
   - {fileID: 1894580327}
   - {fileID: 1809238496}
-  - {fileID: 1968590982}
+  - {fileID: 38797211}
   - {fileID: 1307847000}
   - {fileID: 1432173260}
+  - {fileID: 1968590982}
   - {fileID: 953349853}
-  - {fileID: 1008829990}
   - {fileID: 1848562246}
   - {fileID: 1455677594}
   - {fileID: 53541102}
+  - {fileID: 1008829990}
   - {fileID: 1769950040}
-  - {fileID: 1615204704}
   - {fileID: 1707792402}
   - {fileID: 1522689458}
   - {fileID: 327374439}
-  - {fileID: 38797211}
+  - {fileID: 1615204704}
   - {fileID: 189170837}
   - {fileID: 1123308155}
   - {fileID: 785971114}
@@ -3646,31 +3671,6 @@ Transform:
   - {fileID: 421521633}
   - {fileID: 1791869863}
   - {fileID: 264735004}
-  - {fileID: 102374430}
-  - {fileID: 384094638}
-  - {fileID: 10056985}
-  - {fileID: 1884505286}
-  - {fileID: 371247566}
-  - {fileID: 307267434}
-  - {fileID: 1343489475}
-  - {fileID: 1539816007}
-  - {fileID: 347216071}
-  - {fileID: 1530082984}
-  - {fileID: 1824320657}
-  - {fileID: 418048541}
-  - {fileID: 1729432429}
-  - {fileID: 654444384}
-  - {fileID: 203360167}
-  - {fileID: 665523584}
-  - {fileID: 967782173}
-  - {fileID: 1296879454}
-  - {fileID: 974270902}
-  - {fileID: 400637794}
-  - {fileID: 1315393047}
-  - {fileID: 120459499}
-  - {fileID: 1095598715}
-  - {fileID: 1138972557}
-  - {fileID: 1654747697}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3736,7 +3736,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6695153068064462022, guid: b5e323af7f6874db89ccce687da879f7, type: 3}
       propertyPath: m_Name
-      value: wall1 (6)
+      value: left-wall-2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3763,7 +3763,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8515403275151192866, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_Name
-      value: enemy3 (7)
+      value: enemy-left-3a
       objectReference: {fileID: 0}
     - target: {fileID: 8515403275151192877, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_RootOrder
@@ -3828,7 +3828,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8515403275151192866, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_Name
-      value: enemy2 (2)
+      value: enemy-right-3b
       objectReference: {fileID: 0}
     - target: {fileID: 8515403275151192877, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_RootOrder
@@ -3894,7 +3894,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8515403275151192866, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_Name
-      value: enemy2 (8)
+      value: enemy-left-4b
       objectReference: {fileID: 0}
     - target: {fileID: 8515403275151192877, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_RootOrder
@@ -3959,7 +3959,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8515403275151192866, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_Name
-      value: enemy3 (5)
+      value: enemy-right-5c
       objectReference: {fileID: 0}
     - target: {fileID: 8515403275151192877, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_RootOrder
@@ -4025,7 +4025,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8515403275151192866, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_Name
-      value: enemy1 (1)
+      value: enemy-right-2a
       objectReference: {fileID: 0}
     - target: {fileID: 8515403275151192877, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_RootOrder
@@ -4155,7 +4155,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6695153068064462022, guid: b5e323af7f6874db89ccce687da879f7, type: 3}
       propertyPath: m_Name
-      value: main-brick
+      value: main
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4230,8 +4230,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f82eff4d87e14cd6b7745e305a67320, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialKillBudget: 9
-  maxKillBudget: 9
+  initialKillBudget: 100
+  maxKillBudget: 100
 --- !u!1001 &1843906748
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4242,7 +4242,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8515403275151192866, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_Name
-      value: enemy2 (9)
+      value: enemy-left-5b
       objectReference: {fileID: 0}
     - target: {fileID: 8515403275151192877, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_RootOrder
@@ -4374,7 +4374,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6695153068064462022, guid: b5e323af7f6874db89ccce687da879f7, type: 3}
       propertyPath: m_Name
-      value: wall1 (4)
+      value: right-wall-4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4396,7 +4396,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8515403275151192866, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_Name
-      value: enemy2
+      value: enemy-right-1b
       objectReference: {fileID: 0}
     - target: {fileID: 8515403275151192877, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_RootOrder
@@ -4457,7 +4457,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8515403275151192866, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_Name
-      value: enemy3 (6)
+      value: enemy-left-2a
       objectReference: {fileID: 0}
     - target: {fileID: 8515403275151192877, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_RootOrder
@@ -4591,7 +4591,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6695153068064462022, guid: b5e323af7f6874db89ccce687da879f7, type: 3}
       propertyPath: m_Name
-      value: enemy-brick1 (5)
+      value: right-floor-4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4730,7 +4730,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6695153068064462022, guid: b5e323af7f6874db89ccce687da879f7, type: 3}
       propertyPath: m_Name
-      value: enemy-brick1
+      value: main-right
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4827,7 +4827,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6695153068064462022, guid: b5e323af7f6874db89ccce687da879f7, type: 3}
       propertyPath: m_Name
-      value: enemy-brick1 (9)
+      value: left-floor-4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4844,7 +4844,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8515403275151192866, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_Name
-      value: enemy1 (9)
+      value: enemy-left-4c
       objectReference: {fileID: 0}
     - target: {fileID: 8515403275151192877, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
       propertyPath: m_RootOrder
