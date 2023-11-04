@@ -17,7 +17,6 @@ public class Bullet : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<Enemy>() != null)
         {
-            Debug.Log("bullet.cs -> onCollisionEnter2D");
             collision.gameObject.GetComponent<Enemy>().Damage(1);
             Destroy(gameObject);
         }
