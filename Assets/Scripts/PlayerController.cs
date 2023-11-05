@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
         }
 
         //Listen for space bar to shoot
-        if (Input.GetKey(KeyCode.L))
+        if (Input.GetKey(KeyCode.L) || Input.GetKey(KeyCode.KeypadEnter) || Input.GetMouseButton(0))
         {
             weapon.TriggerFire();
         }
