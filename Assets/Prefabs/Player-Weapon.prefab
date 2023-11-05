@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 4443053158443428177}
   m_Layer: 0
   m_Name: Player-Weapon
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -313,6 +313,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firepoint: {fileID: 6816710496763458245}
   bulletPrefab: {fileID: 165988001353717400, guid: e9a5cc6c114a8448eafab0171ca5b60e, type: 3}
+  attackCooldownTimer: 0
+  attackCooldown: 0.1
+  bulletSpeed: 5
 --- !u!1 &8744606124625153745
 GameObject:
   m_ObjectHideFlags: 0
