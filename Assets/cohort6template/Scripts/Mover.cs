@@ -6,8 +6,8 @@ using UnityEngine;
 public class Mover : MonoBehaviour
 {
     //Set some public variables so we can control our speed
-    public float acceleration = 10f;
-    public float maximumSpeed = 15f;
+    public float acceleration = 60f;
+    public float maximumSpeed = 80f;
 
     private Rigidbody2D myRigidbody2D;
 
