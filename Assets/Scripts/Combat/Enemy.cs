@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour, IDamageable
     [SerializeField] private bool alive = true;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         Health = maxHealth;
     }
@@ -22,7 +22,6 @@ public class Enemy : MonoBehaviour, IDamageable
 
     public void Damage(float amount)
     {
-        Debug.Log("enemy.cs -> damage, " + Health);
         Health -= amount;
 
         if (Health <= 0)
