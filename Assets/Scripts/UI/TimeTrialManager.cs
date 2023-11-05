@@ -28,7 +28,7 @@ public class TimeTrialManager : MonoBehaviour
             timeText.text = minutes + ":" + seconds;
         }
 
-        if (KillBudget.instance.currKillBudget == 99) {
+        if (KillBudget.instance.currKillBudget == 0) {
             StopTimer();
         }
     }
