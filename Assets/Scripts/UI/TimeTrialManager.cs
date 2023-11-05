@@ -28,7 +28,7 @@ public class TimeTrialManager : MonoBehaviour
             timeText.text = minutes + ":" + seconds;
         }
 
-        if (KillBudget.instance.currKillBudget == 80) {
+        if (KillBudget.instance.currKillBudget == 0) {
             StopTimer();
         }
     }
@@ -36,5 +36,6 @@ public class TimeTrialManager : MonoBehaviour
     public void StopTimer()
     {
         isRunning = false;
+        SceneChanger.instance.LoadGameOverScene();
     }
 }
