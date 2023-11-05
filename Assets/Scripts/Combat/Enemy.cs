@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour, IDamageable
 {
     public float Health { get; set; }
+    public float speed = 3;
     [SerializeField] private int maxHealth = 1;
     [SerializeField] private bool alive = true;
 
@@ -36,5 +37,10 @@ public class Enemy : MonoBehaviour, IDamageable
         KillBudget.instance.DecrementKillBudget(1);
         Weapon.instance.IncreaseBulletSpeed(1f);
         Destroy(gameObject);
+    }
+
+    public bool IsAlive()
+    {
+        return alive;
     }
 }
