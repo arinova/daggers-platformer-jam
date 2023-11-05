@@ -176,6 +176,7 @@ MonoBehaviour:
   howToPlaySceneName: HowToPlay
   creditsSceneName: Credits
   gameSceneName: Game
+  gameOverSceneName: GameOver
 --- !u!1 &7952594821753437786
 GameObject:
   m_ObjectHideFlags: 0

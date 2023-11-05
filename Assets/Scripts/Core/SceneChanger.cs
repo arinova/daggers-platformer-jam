@@ -11,6 +11,7 @@ public class SceneChanger : MonoBehaviour
     [SerializeField] string howToPlaySceneName;
     [SerializeField] string creditsSceneName;
     [SerializeField] string gameSceneName;
+    [SerializeField] string gameOverSceneName;
 
     private void Awake()
     {
@@ -32,5 +33,10 @@ public class SceneChanger : MonoBehaviour
     public void LoadGameScene()
     {
         SceneManager.LoadScene(gameSceneName);
+    }
+
+    public void LoadGameOverScene()
+    {
+        SceneManager.LoadScene(gameOverSceneName);
     }
 }
