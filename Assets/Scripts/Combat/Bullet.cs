@@ -20,6 +20,10 @@ public class Bullet : MonoBehaviour
             collision.gameObject.GetComponent<Enemy>().Damage(1);
             Destroy(gameObject);
         }
+        if (collision.gameObject.CompareTag("Wall"))
+        {
+            Destroy(gameObject, .05f);
+        }
     }
 
     public void SetBulletSpeed(float bulletSpeed)
