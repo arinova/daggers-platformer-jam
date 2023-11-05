@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     public AudioSource audioSource;
     public Weapon weapon;
 
-    private bool isFacingRight = true;
+    private bool isFacingLeft = true;
 
     // Update is called once per frame, around 60 times a second
     void Update()
@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
         {
             mover.AccelerateInDirection(new Vector2(-1, 0));
             //spriteRenderer.flipX = true;
-            if (isFacingRight)
+            if (!isFacingLeft)
             {
                 Flip();
             }
@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
         {
             mover.AccelerateInDirection(new Vector2(1, 0));
             //spriteRenderer.flipX = false;
-            if (!isFacingRight)
+            if (isFacingLeft)
             {
                 Flip();
             }
@@ -68,6 +68,6 @@ public class PlayerController : MonoBehaviour
     void Flip()
     {
         transform.Rotate(0f, 180f, 0f);
-        isFacingRight = !isFacingRight;
+        isFacingLeft = !isFacingLeft;
     }
 }
