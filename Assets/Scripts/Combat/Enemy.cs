@@ -34,6 +34,7 @@ public class Enemy : MonoBehaviour, IDamageable
     {
         alive = false;
         KillBudget.instance.DecrementKillBudget(1);
+        Weapon.instance.IncreaseBulletSpeed(1f);
         Destroy(gameObject);
     }
 }
