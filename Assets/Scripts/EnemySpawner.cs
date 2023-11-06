@@ -4,7 +4,7 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     public GameObject enemyPrefab; // Assign this in the inspector
-    public float spawnRate = 0.02f;
+    public float spawnRate = 5f;
     public Vector2[] spawnLocations;
     public int maxEnemies = 100;
     private float y = 2f;
@@ -19,6 +19,7 @@ public class EnemySpawner : MonoBehaviour
         // Check if it's time to spawn an enemy
         if (Time.time >= nextSpawnTime && enemies.Count < maxEnemies)
         {
+            Debug.Log("spawn" + enemies.Count);
             SpawnEnemy();
             nextSpawnTime = Time.time + spawnRate;
             Vector2 spawnLocation = new Vector2(Random.Range(minX, maxX), y);
