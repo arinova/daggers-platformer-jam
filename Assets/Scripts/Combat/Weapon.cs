@@ -9,11 +9,12 @@ public class Weapon : MonoBehaviour
     public Transform firepoint;
     public GameObject bulletPrefab;
     public float attackCooldownTimer = 0;
-    [SerializeField] private float attackCooldown = .1f; // .1f is fast, make larger to slow down fire rate
+    [SerializeField] private float attackCooldown = 1f; // .1f is fast, make larger to slow down fire rate
     private bool weaponTriggered = false;
+    private float minAttackCooldown = .1f; // .1f is fast, make larger to slow down fire rate
 
     // Bullet
-    [SerializeField] private float bulletSpeed = 5f; // 5-20 (increasing speed also increases range because it travels faster before timer destroys it)
+    [SerializeField] private float bulletSpeed = 10f; // 5-20 (increasing speed also increases range because it travels faster before timer destroys it)
     private float maxBulletSpeed = 20f;
 
     private void Awake()
@@ -50,5 +51,10 @@ public class Weapon : MonoBehaviour
     public void IncreaseBulletSpeed(float amount)
     {
         if (bulletSpeed < maxBulletSpeed) bulletSpeed += amount;
+    }
+
+    public void IncreaseFireRate(float amount)
+    {
+        if (bulletSpeed > minAttackCooldown) attackCooldown -= amount;
     }
 }
