@@ -165,6 +165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  damage: 1
   maxHealth: 1
   alive: 1
   attributeType: 0
@@ -182,6 +183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 9292199414250631}
+  damageOnCollision: 1
 --- !u!114 &51371017986814647
 MonoBehaviour:
   m_ObjectHideFlags: 0

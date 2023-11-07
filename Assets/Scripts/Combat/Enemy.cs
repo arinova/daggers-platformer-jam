@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour, IDamageable
 {
     public float Health { get; set; }
     public float speed = 3;
+    public int damage = 1;
     [SerializeField] private int maxHealth = 1;
     [SerializeField] private bool alive = true;
     [SerializeField] Attribute attributeType = Attribute.BULLET_SPEED;

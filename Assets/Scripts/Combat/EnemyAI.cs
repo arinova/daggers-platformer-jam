@@ -3,7 +3,17 @@ using System.Collections;
 
 public class EnemyAI : MonoBehaviour
 {
+    enum EnemyAIState
+    {
+        NOCHASE,
+        IDLE,
+        CHASE,
+        ATTACK
+    }
+
     public Enemy enemy;
+    public bool damageOnCollision = false;
+    EnemyAIState aiState = EnemyAIState.NOCHASE;
 
     // Use this for initialization
     void Start()
@@ -22,15 +32,39 @@ public class EnemyAI : MonoBehaviour
 
     public virtual void RunAI()
     {
-        //ChasePlayer();
+        switch (aiState)
+        {
+            case EnemyAIState.IDLE:
+                break;
+            case EnemyAIState.CHASE:
+                RunChase();
+                break;
+            case EnemyAIState.ATTACK:
+                RunAttack();
+                break;
+        }
     }
 
-    public void ChasePlayer()
+    public virtual void RunChase()
     {
         GameObject target = GameObject.FindGameObjectWithTag("Player");
         if (target)
         {
             enemy.transform.position = Vector2.MoveTowards(new Vector2(transform.position.x, transform.position.y), target.transform.position, enemy.speed * Time.deltaTime);
+        }
+    }
+
+    public virtual void RunAttack()
+    {
+       
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            if(damageOnCollision)
+            collision.gameObject.GetComponent<PlayerHealth>().Damage(enemy.damage);
         }
     }
 }
