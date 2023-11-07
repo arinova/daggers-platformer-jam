@@ -36,6 +36,5 @@ public class TimeTrialManager : MonoBehaviour
     public void StopTimer()
     {
         isRunning = false;
-        SceneChanger.instance.LoadGameOverScene();
     }
 }

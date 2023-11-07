@@ -40,5 +40,6 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     void Die()
     {
         // To Do: GameOver
+        SceneChanger.instance.LoadGameOverScene();
     }
 }
