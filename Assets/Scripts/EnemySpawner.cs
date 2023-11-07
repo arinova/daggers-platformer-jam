@@ -29,14 +29,17 @@ public class EnemySpawner : MonoBehaviour
 
     private void Update()
     {
-        // Check if it's time to spawn an enemy
-        if (Time.time >= nextSpawnTime && enemies.Count < maxEnemies)
+        if (!GameManager.instance.isBossFight)
         {
-            nextSpawnTime = Time.time + spawnRate;
-            Vector2 spawnLocation = new Vector2(Random.Range(minX, maxX), y);
-            SpawnEnemy(GetNextEnemyPrefab(), spawnLocation);
-            enemyPrefabsIndex++;
-            IncreaseSpawnRate();
+            // Check if it's time to spawn an enemy
+            if (Time.time >= nextSpawnTime && enemies.Count < maxEnemies)
+            {
+                nextSpawnTime = Time.time + spawnRate;
+                Vector2 spawnLocation = new Vector2(Random.Range(minX, maxX), y);
+                SpawnEnemy(GetNextEnemyPrefab(), spawnLocation);
+                enemyPrefabsIndex++;
+                IncreaseSpawnRate();
+            }
         }
 
         // Cleanup any null entries if enemies were destroyed

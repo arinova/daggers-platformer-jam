@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2196827041543056243}
   - component: {fileID: 8925560450211850582}
   - component: {fileID: 7184385030304924136}
-  - component: {fileID: 5229697261077753902}
+  - component: {fileID: 7276119215032545324}
   m_Layer: 0
   m_Name: EnemyLevel5-Boss
   m_TagString: Untagged
@@ -120,8 +120,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.024771214, y: -0.17244577}
-  m_Size: {x: 3.962781, y: 4.616087}
+  m_Offset: {x: -0.024771214, y: -0.056830883}
+  m_Size: {x: 3.962781, y: 4.384857}
   m_Direction: 0
 --- !u!50 &8925560450211850582
 Rigidbody2D:
@@ -167,7 +167,7 @@ MonoBehaviour:
   alive: 1
   attributeType: 1
   level: 1
---- !u!114 &5229697261077753902
+--- !u!114 &7276119215032545324
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4592255879372470755}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65a6ce0fcbd824253b0ee0f9c70677b1, type: 3}
+  m_Script: {fileID: 11500000, guid: 584e35dd8989a42d189ae909ad7b3116, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7184385030304924136}
