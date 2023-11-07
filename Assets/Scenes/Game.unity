@@ -108841,6 +108841,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 487dda2842b0a4ff690fc3bb29433c91, type: 3}
+--- !u!114 &1635012669 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3187687159176485150, guid: 2d1edaa2d129d43759612b6a5f59650e, type: 3}
+  m_PrefabInstance: {fileID: 1512343566}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1635279596
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -108912,7 +108923,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 251584601790003829, guid: 8f8b66b848e4a4a5081aa395f3238979, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1289081791875523075, guid: 8f8b66b848e4a4a5081aa395f3238979, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -109118,6 +109129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealthText: {fileID: 75879569}
+  healthBarSprite: {fileID: 1635012669}
   playerHealth: {fileID: 1336737272}
 --- !u!224 &2048870647 stripped
 RectTransform:

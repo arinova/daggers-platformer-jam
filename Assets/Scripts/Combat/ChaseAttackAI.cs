@@ -4,15 +4,8 @@ using UnityEngine;
 
 public class ChaseAttackAI : EnemyAI
 {
-    // Start is called before the first frame update
-    void Start()
+    public override void RunAI()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        base.RunAI();
     }
 }

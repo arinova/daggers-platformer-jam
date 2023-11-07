@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour, IDamageable
 {
-    public float Health { get; set; }
+    [SerializeField] public float Health { get; set; }
     public float speed = 3;
-    [SerializeField] private int maxHealth = 1;
+    [SerializeField] public int maxHealth = 1;
     [SerializeField] private bool alive = true;
     [SerializeField] Attribute attributeType = Attribute.BULLET_SPEED;
     [SerializeField] int level = 1; // 1, 2, 3 being easy, medium, hard with matching reward
+    private bool isBoss = false;
 
     // Start is called before the first frame update
     private void Start()
@@ -36,13 +37,28 @@ public class Enemy : MonoBehaviour, IDamageable
     void Die()
     {
         alive = false;
-        KillBudget.instance.DecrementKillBudget(1);
-        AttributeManager.instance.UpdateKills(attributeType, level);
-        Destroy(gameObject);
+        if (!isBoss)
+        {
+            KillBudget.instance.DecrementKillBudget(1);
+            AttributeManager.instance.UpdateKills(attributeType, level);
+            Destroy(gameObject);
+        }
+        else
+        {
+            alive = false;
+
+            // To Do: Win Screen
+            Destroy(gameObject);
+        }
     }
 
     public bool IsAlive()
     {
         return alive;
+    }
+
+    public void setIsBossTrue()
+    {
+        isBoss = true;
     }
 }

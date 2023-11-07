@@ -7,6 +7,7 @@ using TMPro;
 public class PlayerHealthUI : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI playerHealthText;
+    [SerializeField] Image healthBarSprite;
     public PlayerHealth playerHealth;
 
     // Start is called before the first frame update
@@ -19,10 +20,16 @@ public class PlayerHealthUI : MonoBehaviour
     void Update()
     {
         UpdateHealthUIText();
+        UpdateFillSprite();
     }
 
     void UpdateHealthUIText()
     {
         playerHealthText.text = playerHealth.Health.ToString();
+    }
+
+    void UpdateFillSprite()
+    {
+        healthBarSprite.fillAmount = playerHealth.Health / playerHealth.maxHealth;
     }
 }

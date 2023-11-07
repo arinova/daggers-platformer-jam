@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour, IDamageable
 {
     public float Health { get; set; }
-    [SerializeField] private int maxHealth = 5;
+    [SerializeField] public int maxHealth = 5;
     public GameObject Player;
 
     // Start is called before the first frame update

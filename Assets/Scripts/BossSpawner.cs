@@ -13,6 +13,8 @@ public class BossSpawner : MonoBehaviour
 
     public void SpawnBoss()
     {
+        Debug.Log("SpawnBoss");
         var newEnemy = Instantiate(bossPrefab, gameObject.transform.position, Quaternion.identity);
+        newEnemy.gameObject.GetComponent<Enemy>().setIsBossTrue();
     }
 }

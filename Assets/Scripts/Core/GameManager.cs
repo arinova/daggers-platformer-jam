@@ -26,10 +26,13 @@ public class GameManager : MonoBehaviour
 
     public void TriggerBossFight()
     {
-        isBossFight = true;
-        if (OnBossFightTriggeredCallback != null)
+        if (!isBossFight)
         {
-            OnBossFightTriggeredCallback.Invoke();
+            isBossFight = true;
+            if (OnBossFightTriggeredCallback != null)
+            {
+                OnBossFightTriggeredCallback.Invoke();
+            }
         }
     }
 }
