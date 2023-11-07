@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 1972199229980902601}
   - component: {fileID: 9292199414250631}
   - component: {fileID: 3112572591769297956}
+  - component: {fileID: 51371017986814647}
+  - component: {fileID: 8140094499528678528}
   m_Layer: 0
   m_Name: EnemyTempBulletSpd
   m_TagString: Untagged
@@ -120,8 +122,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.2162025, y: -1.0279365}
-  m_Size: {x: 1.6537404, y: 2.5828695}
+  m_Offset: {x: -0.047069967, y: 1.1707861}
+  m_Size: {x: 1.3950671, y: 2.443584}
   m_Direction: 0
 --- !u!50 &1972199229980902601
 Rigidbody2D:
@@ -163,6 +165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  damage: 1
   maxHealth: 1
   alive: 1
   attributeType: 0
@@ -180,3 +183,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 9292199414250631}
+  damageOnCollision: 1
+  noChase: 1
+--- !u!114 &51371017986814647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5393745638645862332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1697412fc009824290de48c2035ca1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeUntilJump: 3
+  jumper: {fileID: 8140094499528678528}
+--- !u!114 &8140094499528678528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5393745638645862332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82db87848068c7d47a421443a55ee0ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpForce: 10
+  groundCheckOffset: -0.37
+  groundCheckDistance: 0.2
+  gravityScaleWhileJumpHeld: 0.5
