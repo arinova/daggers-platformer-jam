@@ -71,7 +71,7 @@ public class EnemyAI : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") && !noChase)
         {
             aiState = EnemyAIState.CHASE;
         }
@@ -79,7 +79,7 @@ public class EnemyAI : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") && !noChase)
         {
             aiState = EnemyAIState.IDLE;
         }
