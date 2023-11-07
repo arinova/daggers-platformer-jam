@@ -49,6 +49,8 @@ public class KillBudget : MonoBehaviour
             currKillBudget = 0;
             // To Do: Trigger Boss Fight
             GameManager.instance.TriggerBossFight();
+            // Temporary.. Win
+            SceneChanger.instance.LoadWinScene();
         }
     }
 }
