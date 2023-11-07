@@ -25,6 +25,7 @@ public class AttributeManager : MonoBehaviour
     void Start()
     {
         InitializeAttributeKillDictionary();
+        killsToUpdate = KillBudget.instance.initialKillBudget / 4;
     }
 
     // Update is called once per frame

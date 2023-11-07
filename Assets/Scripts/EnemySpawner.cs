@@ -22,6 +22,11 @@ public class EnemySpawner : MonoBehaviour
     private List<GameObject> enemies = new List<GameObject>();
     private int enemyPrefabsIndex = 0;
 
+    private void Start()
+    {
+        maxEnemies = KillBudget.instance.initialKillBudget;    
+    }
+
     private void Update()
     {
         // Check if it's time to spawn an enemy
@@ -53,10 +58,10 @@ public class EnemySpawner : MonoBehaviour
 
     private void IncreaseSpawnRate()
     {
-        if (KillBudget.instance.currKillBudget < 10) spawnRate = thirdSpawnRate;
-        else if (KillBudget.instance.currKillBudget < 25) spawnRate = fourthSpawnRate;
-        else if (KillBudget.instance.currKillBudget < 50) spawnRate = thirdSpawnRate;
-        else if (KillBudget.instance.currKillBudget < 75) spawnRate = secondSpawnRate;
+        if (KillBudget.instance.currKillBudget < ((KillBudget.instance.initialKillBudget / 4) * .4)) spawnRate = thirdSpawnRate;
+        else if (KillBudget.instance.currKillBudget < ((KillBudget.instance.initialKillBudget / 4) * 1)) spawnRate = fourthSpawnRate;
+        else if (KillBudget.instance.currKillBudget < ((KillBudget.instance.initialKillBudget / 4) * 2)) spawnRate = thirdSpawnRate;
+        else if (KillBudget.instance.currKillBudget < ((KillBudget.instance.initialKillBudget / 4) * 3)) spawnRate = secondSpawnRate;
         else spawnRate = initialSpawnRate;
     }
 }
