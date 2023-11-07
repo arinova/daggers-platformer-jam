@@ -26,5 +26,7 @@ public class GameManager : MonoBehaviour
     {
         isBossFight = true;
         Debug.Log("GameManager: Boss Fight Triggered");
+
+        // To Do: Trigger Boss Fight
     }
 }

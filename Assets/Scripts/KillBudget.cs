@@ -47,10 +47,7 @@ public class KillBudget : MonoBehaviour
         if (currKillBudget <= 0)
         {
             currKillBudget = 0;
-            // To Do: Trigger Boss Fight
             GameManager.instance.TriggerBossFight();
-            // Temporary.. Win
-            SceneChanger.instance.LoadWinScene();
         }
     }
 }
