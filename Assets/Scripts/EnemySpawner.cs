@@ -53,8 +53,8 @@ public class EnemySpawner : MonoBehaviour
 
     private void IncreaseSpawnRate()
     {
-        if (KillBudget.instance.currKillBudget < 10) spawnRate = fourthSpawnRate;
-        else if (KillBudget.instance.currKillBudget < 25) spawnRate = .5f;
+        if (KillBudget.instance.currKillBudget < 10) spawnRate = thirdSpawnRate;
+        else if (KillBudget.instance.currKillBudget < 25) spawnRate = fourthSpawnRate;
         else if (KillBudget.instance.currKillBudget < 50) spawnRate = thirdSpawnRate;
         else if (KillBudget.instance.currKillBudget < 75) spawnRate = secondSpawnRate;
         else spawnRate = initialSpawnRate;

@@ -83,7 +83,11 @@ MonoBehaviour:
   enemyPrefabs:
   - {fileID: 8515403275151192866, guid: 0af6be5bc130b42878770eeeb4f104d6, type: 3}
   - {fileID: 8515403275151192866, guid: 790685c61db3d40cb8fa8e62f0247106, type: 3}
-  spawnRate: 0.5
+  initialSpawnRate: 5
+  secondSpawnRate: 2
+  thirdSpawnRate: 1
+  fourthSpawnRate: 0.5
+  spawnRate: 5
   spawnLocations: []
   maxEnemies: 100
 --- !u!50 &92205027784950152
