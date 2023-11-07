@@ -32,12 +32,6 @@ public class EnemySpawner : MonoBehaviour
         if (KillBudget.instance.currKillBudget <= 0)
         {
             // If kill budget is 0, stop spawning enemies
-
-            // To do: Remove temporary win condition when Boss is implemented
-            if (enemies.Count == 0)
-            {
-                SceneChanger.instance.LoadWinScene();
-            }
         }
         else
         {

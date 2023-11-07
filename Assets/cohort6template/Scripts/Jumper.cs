@@ -44,6 +44,7 @@ public class Jumper : MonoBehaviour
         //As long as we are on the ground
         if (IsOnGround())
         {
+            //Debug.Log("Ground");
             //Jump!
             myRigidBody2D.velocity += new Vector2(0f, jumpForce);
 
@@ -53,6 +54,7 @@ public class Jumper : MonoBehaviour
                 myRigidBody2D.velocity = new Vector2(myRigidBody2D.velocity.x, jumpForce);
             }
         }
+        //else Debug.Log(" Not Ground");
     }
 
     // In this function, we raycast downwards to check if we are on the ground

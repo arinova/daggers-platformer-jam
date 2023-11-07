@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour, IDamageable
     [SerializeField] private bool alive = true;
     [SerializeField] Attribute attributeType = Attribute.BULLET_SPEED;
     [SerializeField] int level = 1; // 1, 2, 3 being easy, medium, hard with matching reward
+    private bool isBoss = false;
 
     // Start is called before the first frame update
     private void Start()
@@ -37,13 +38,25 @@ public class Enemy : MonoBehaviour, IDamageable
     void Die()
     {
         alive = false;
-        KillBudget.instance.DecrementKillBudget(1);
-        AttributeManager.instance.UpdateKills(attributeType, level);
-        Destroy(gameObject);
+        if (!isBoss)
+        {
+            KillBudget.instance.DecrementKillBudget(1);
+            AttributeManager.instance.UpdateKills(attributeType, level);
+            Destroy(gameObject);
+        }
+        else
+        {
+            SceneChanger.instance.LoadWinScene();
+        }
     }
 
     public bool IsAlive()
     {
         return alive;
+    }
+
+    public void setIsBossTrue()
+    {
+        isBoss = true;
     }
 }

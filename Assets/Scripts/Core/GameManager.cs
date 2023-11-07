@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     public bool isBossFight { get; private set; }
+    public delegate void OnBossFightTriggered();
+    public OnBossFightTriggered OnBossFightTriggeredCallback;
 
     private void Awake()
     {
@@ -25,8 +27,9 @@ public class GameManager : MonoBehaviour
     public void TriggerBossFight()
     {
         isBossFight = true;
-        Debug.Log("GameManager: Boss Fight Triggered");
-
-        // To Do: Trigger Boss Fight
+        if (OnBossFightTriggeredCallback != null)
+        {
+            OnBossFightTriggeredCallback.Invoke();
+        }
     }
 }
