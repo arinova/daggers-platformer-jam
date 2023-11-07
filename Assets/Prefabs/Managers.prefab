@@ -129,7 +129,7 @@ MonoBehaviour:
   enemyPrefabs:
   - {fileID: 5393745638645862332, guid: e5621e0598a8742959d0d8cd076f2737, type: 3}
   - {fileID: 2975641325195920944, guid: ff3f320b4011b4cbca17737d17896abf, type: 3}
-  initialSpawnRate: 5
+  initialSpawnRate: 3
   secondSpawnRate: 2
   thirdSpawnRate: 1
   fourthSpawnRate: 0.5
