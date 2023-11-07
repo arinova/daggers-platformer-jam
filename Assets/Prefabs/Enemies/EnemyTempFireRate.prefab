@@ -165,7 +165,7 @@ MonoBehaviour:
   speed: 3
   maxHealth: 1
   alive: 1
-  attributeType: 0
+  attributeType: 1
   level: 1
 --- !u!114 &2936201081955705545
 MonoBehaviour:
