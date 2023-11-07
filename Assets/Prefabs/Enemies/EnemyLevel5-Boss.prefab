@@ -165,9 +165,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 965952d5ab1764aaf89d961cb25c2532, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 3
   damage: 1
-  maxHealth: 5
+  maxHealth: 25
   alive: 1
   attributeType: 1
   level: 1
