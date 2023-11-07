@@ -22,6 +22,6 @@ public class KillBudgetUI : MonoBehaviour
 
     void UpdateKillBudgetUIText()
     {
-        killBudgetText.text = KillBudget.instance.currKillBudget.ToString();
+        killBudgetText.text = "Kill Budget: " + KillBudget.instance.currKillBudget.ToString();
     }
 }

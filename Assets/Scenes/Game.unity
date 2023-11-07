@@ -109029,6 +109029,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DebugButtons
       objectReference: {fileID: 0}
+    - target: {fileID: 251584601790003829, guid: 8f8b66b848e4a4a5081aa395f3238979, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1289081791875523075, guid: 8f8b66b848e4a4a5081aa395f3238979, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
