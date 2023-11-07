@@ -22,7 +22,7 @@ public class EnemyAI : MonoBehaviour
 
     public virtual void RunAI()
     {
-        ChasePlayer();
+        //ChasePlayer();
     }
 
     public void ChasePlayer()

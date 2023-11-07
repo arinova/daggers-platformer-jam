@@ -24,7 +24,7 @@ public class EnemySpawner : MonoBehaviour
 
     private void Start()
     {
-        maxEnemies = KillBudget.instance.initialKillBudget;    
+        maxEnemies = KillBudget.instance.initialKillBudget;
     }
 
     private void Update()
