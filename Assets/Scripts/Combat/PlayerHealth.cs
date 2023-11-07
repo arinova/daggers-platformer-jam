@@ -6,6 +6,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
 {
     public float Health { get; set; }
     [SerializeField] private int maxHealth = 5;
+    public GameObject Player;
 
     // Start is called before the first frame update
     void Start()
@@ -13,10 +14,9 @@ public class PlayerHealth : MonoBehaviour, IDamageable
         Health = maxHealth;   
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        CheckPlayerFallOffLevel();
     }
 
     public void Damage(float amount)
@@ -39,7 +39,14 @@ public class PlayerHealth : MonoBehaviour, IDamageable
 
     void Die()
     {
-        // To Do: GameOver
         SceneChanger.instance.LoadGameOverScene();
+    }
+
+    void CheckPlayerFallOffLevel()
+    {
+        if (Player.transform.position.y <= -10)
+        {
+            Damage(Health);
+        }
     }
 }
