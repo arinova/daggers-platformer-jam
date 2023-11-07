@@ -23,6 +23,13 @@ public class PlayerHealthUI : MonoBehaviour
 
     void UpdateHealthUIText()
     {
-        playerHealthText.text = playerHealth.Health.ToString();
+        if (KillBudget.instance.currKillBudget != 0)
+        {
+            playerHealthText.text = "Health: --";
+        }
+        else
+        {
+            playerHealthText.text = "Health: " + playerHealth.Health.ToString();
+        }
     }
 }

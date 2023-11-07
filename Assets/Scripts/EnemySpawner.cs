@@ -29,17 +29,30 @@ public class EnemySpawner : MonoBehaviour
 
     private void Update()
     {
-        // Check if it's time to spawn an enemy
-        if (Time.time >= nextSpawnTime && enemies.Count < maxEnemies)
+        if (KillBudget.instance.currKillBudget <= 0)
         {
-            nextSpawnTime = Time.time + spawnRate;
-            Vector2 spawnLocation = new Vector2(Random.Range(minX, maxX), y);
-            SpawnEnemy(GetNextEnemyPrefab(), spawnLocation);
-            enemyPrefabsIndex++;
-            IncreaseSpawnRate();
-        }
+            // If kill budget is 0, stop spawning enemies
 
-        // Cleanup any null entries if enemies were destroyed
+            // To do: Remove temporary win condition when Boss is implemented
+            if (enemies.Count == 0)
+            {
+                SceneChanger.instance.LoadWinScene();
+            }
+        }
+        else
+        {
+            // Check if it's time to spawn an enemy
+            if (Time.time >= nextSpawnTime && enemies.Count < maxEnemies)
+            {
+                nextSpawnTime = Time.time + spawnRate;
+                Vector2 spawnLocation = new Vector2(Random.Range(minX, maxX), y);
+                SpawnEnemy(GetNextEnemyPrefab(), spawnLocation);
+                enemyPrefabsIndex++;
+                IncreaseSpawnRate();
+            }
+
+            // Cleanup any null entries if enemies were destroyed
+        }
         enemies.RemoveAll(item => item == null);
     }
 
