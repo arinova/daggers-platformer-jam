@@ -44,9 +44,9 @@ public class PlayerHealth : MonoBehaviour, IDamageable
 
     void CheckPlayerFallOffLevel()
     {
-        if (Player.transform.position.y <= -25)
+        if (Player.transform.position.y <= -8)
         {
-            Damage(Health);
+            Die();
         }
     }
 }
