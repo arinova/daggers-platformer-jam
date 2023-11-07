@@ -5,6 +5,7 @@ using UnityEngine;
 public class BossSpawner : MonoBehaviour
 {
     public GameObject bossPrefab;
+    private bool bossSpawned = false;
 
     void Start()
     {
@@ -13,7 +14,11 @@ public class BossSpawner : MonoBehaviour
 
     public void SpawnBoss()
     {
-        var newEnemy = Instantiate(bossPrefab, gameObject.transform.position, Quaternion.identity);
-        newEnemy.gameObject.GetComponent<Enemy>().setIsBossTrue();
+        if (!bossSpawned)
+        {
+            var newEnemy = Instantiate(bossPrefab, gameObject.transform.position, Quaternion.identity);
+            newEnemy.gameObject.GetComponent<Enemy>().setIsBossTrue();
+            bossSpawned = true;
+        }
     }
 }
