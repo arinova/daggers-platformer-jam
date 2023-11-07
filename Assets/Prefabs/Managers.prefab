@@ -219,7 +219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f82eff4d87e14cd6b7745e305a67320, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialKillBudget: 100
+  initialKillBudget: 30
   maxKillBudget: 100
 --- !u!114 &348444025621964969
 MonoBehaviour:
