@@ -13,12 +13,13 @@ public class EnemyAI : MonoBehaviour
 
     public Enemy enemy;
     public bool damageOnCollision = false;
-    EnemyAIState aiState = EnemyAIState.NOCHASE;
+    public bool noChase = false;
+    EnemyAIState aiState = EnemyAIState.IDLE;
 
     // Use this for initialization
     void Start()
     {
-
+        if (noChase) aiState = EnemyAIState.NOCHASE;
     }
 
     // Update is called once per frame
@@ -65,6 +66,22 @@ public class EnemyAI : MonoBehaviour
         {
             if(damageOnCollision)
             collision.gameObject.GetComponent<PlayerHealth>().Damage(enemy.damage);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            aiState = EnemyAIState.CHASE;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            aiState = EnemyAIState.IDLE;
         }
     }
 }

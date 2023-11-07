@@ -184,6 +184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 9292199414250631}
   damageOnCollision: 1
+  noChase: 1
 --- !u!114 &51371017986814647
 MonoBehaviour:
   m_ObjectHideFlags: 0
