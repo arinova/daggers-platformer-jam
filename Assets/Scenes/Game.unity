@@ -108795,6 +108795,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level-WoodFloor
       objectReference: {fileID: 0}
+    - target: {fileID: 1152308731095006941, guid: 487dda2842b0a4ff690fc3bb29433c91, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6602935986697679312, guid: 487dda2842b0a4ff690fc3bb29433c91, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
